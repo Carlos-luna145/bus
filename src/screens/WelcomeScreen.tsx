@@ -16,18 +16,17 @@ const WelcomeScreen = ({ navigation }: any) => {
   };
 
   const handleSignUp = () => {
-    // TODO: cambiar esto por: navigation.navigate('SignUp');
-    console.log('Navegar a SignUp');
+    navigation.navigate('CreateAccount'); // Cambiar esto
   };
 
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="#f5f5f5" barStyle="dark-content" />
-      
+
       <View style={styles.content}>
         {/* Logo del autobús */}
         <View style={styles.iconContainer}>
-          <Image 
+          <Image
             source={require('../../assets/images/bus-logo.png')} // TODO: Ajustar ruta de la imagen
             style={styles.busLogo}
             resizeMode="contain"
